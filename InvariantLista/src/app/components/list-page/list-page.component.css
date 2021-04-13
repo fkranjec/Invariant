@@ -1,0 +1,21 @@
+.gumbovi{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    width: 100%;
+    padding-top: 3%;
+    justify-content: space-around;
+}
+.inputForm{
+    place-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3%;
+    
+}
+.inputForm>input{
+    margin-left: 3%;
+    border: none;
+    outline: none;
+}
+

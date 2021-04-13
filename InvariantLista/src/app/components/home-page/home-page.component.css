@@ -1,0 +1,137 @@
+
+.naslov{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    place-items: center;
+    margin-top: 2%;
+    
+}
+.naslov>h1{
+    font-size: x-large;
+    color: white;
+    font-weight:200;
+}
+.naslov>hr{
+    width: 5%;
+    margin-top: -5%;
+    background-color: #80808088;
+    color: #80808088;
+    border: 1px solid #80808088;
+    fill: #80808088;
+}
+.naslov>h2{
+    color: white;
+    font-weight: 200;
+    font-size: medium;
+}
+.prviDio:nth-child(odd){
+    margin-top: 2%;
+    margin-left: 10%;
+    display: flex;
+    color: white;
+    margin-right: 10%;
+}
+.prviDio:nth-child(even){
+    margin-top: 2%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row-reverse;
+    color: white;
+    margin-right: 10%;
+}
+.krug{
+    align-items: center;
+    background-color: white;
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+}
+.prviDio:nth-child(odd)>.tekstPrviDio{
+    align-items: center;
+    margin-left: 3%;
+}
+.prviDio:nth-child(even)>.tekstPrviDio{
+    margin-right: 3%;
+}
+.prviDio:nth-child(odd)>.tekstPrviDio>h1{
+    font-size: xx-large;
+    font-weight: 200;
+    margin-bottom: auto;
+}
+.prviDio:nth-child(even)>.tekstPrviDio>h1{
+    font-size: xx-large;
+    text-align: end;
+    margin-bottom: auto;
+}
+.prviDio:nth-child(odd)>.tekstPrviDio>label{
+    font-weight: 200;
+    text-align:end;
+}
+.gumb{
+    margin-top: 3%;
+    display: flex;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+}
+.saznajVise{
+    background-color: transparent;
+    color: white;
+    align-items: center;
+    width: 20%;
+    height: 50px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+.saznajVise:hover{
+    cursor: pointer;
+    background-color: #80808088;
+}
+.prviDio[id]{
+    margin-top: 2%;
+    margin-left: 10%;
+    display: flex;
+    color: #80808088;
+    margin-right: 10%;
+}
+.drugiDio{
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    margin-top: 5%;
+}
+.drugiDio>img{
+    width: 450px;
+    margin: 1%;
+    border-radius: 5px;
+}
+#prvi{
+    padding-bottom: 20%;
+}
+.treciDio{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    display: flex;
+    place-content: center;
+    color: white;
+}
+.treciDio>.karticaTreciDio{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    
+}
+.treciDio>.karticaTreciDio>h1{
+    font-size: xx-large;
+    margin-bottom: auto;
+}
+.treciDio>.karticaTreciDio>img{
+    width: 50%;
+}
+.treciDio>.karticaTreciDio>label{
+    color: #80808088;
+}
+

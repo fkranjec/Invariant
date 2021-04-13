@@ -1,0 +1,18 @@
+  <div class="karticaLista">
+    <igx-list #fruitList>
+        <igx-list-item id="listItem" *ngFor="let fruit of data" igxRipple igxRippleTarget=".igx-list__item-content">
+            <label>{{ fruit.naziv }} {{fruit.id}} {{fruit.opis}}</label> 
+            <button class="gumb" type="button" igxButton="raised" (click)="rasporedElemenata(0,fruit.id)">Gore</button> 
+            <button class="gumb" type="button" igxButton="raised" (click)="rasporedElemenata(1,fruit.id)">Dolje</button> 
+            <button class="gumb" type="button" igxButton="raised" (click)="rasporedElemenata(2,fruit.id)">Obriši</button>
+        </igx-list-item>
+    </igx-list>
+      <div class="gumbovi">
+        <form class="inputForm">
+          <input type="text" placeholder="Unesite naziv" name="nazivText" #nazivText>
+          <input type="number" placeholder="Unesite ID" name="idText" #idText>
+          <input type="text" placeholder="Unesite opis" name="opisText" #opisText>
+        </form>
+          <button class="btnDodaj" igxButton="raised" (click)="dodajNovi(nazivText.value,idText.value,opisText.value)">Dodaj</button>
+      </div>
+  </div>

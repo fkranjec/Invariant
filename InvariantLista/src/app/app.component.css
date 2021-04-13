@@ -1,0 +1,36 @@
+.navbar{
+    z-index: 999;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #1c1c1c;
+    place-content: center;
+    margin:0;
+    color: white;
+    height: 5%;
+}
+
+.navbar>a{
+    margin: auto;
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    padding:10px;
+}
+.navbar>a:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    transform: skewX(-10deg);
+}
+.navbar>a>img{
+    padding-top:2% ;
+    margin: auto;
+    width: 50%;
+}
+.navbar>a[class]:hover{
+    background-color: transparent;
+}
+#timeWeb{
+    margin-left: 20%;
+}
