@@ -8,6 +8,12 @@ interface AppState {
   lista:any[]
 }
 
+interface AppData {
+  naziv: String,
+  id: number,
+  opis: String
+}
+
 
 @Component({
   selector: 'app-list-page',
@@ -25,7 +31,7 @@ export class ListPageComponent {
     lista$: Observable<any[]>
    
 
-    public data: any[]=[];
+    public data: AppData[]=[];
     
     constructor(private store:Store<AppState>) {
       this.message$ = this.store.select('message')
@@ -35,10 +41,10 @@ export class ListPageComponent {
 
     ngOnInit() {
       if(sessionStorage.getItem("state") !== null){
-      var pom:any = JSON.parse(sessionStorage.getItem("state") as any);
-      console.log(pom)
-      this.data = pom;
-    }     
+        var pom:any = JSON.parse(sessionStorage.getItem("state") as any);
+        console.log(pom)
+        this.data = pom;
+      }     
     }
     
     public loadFruits() {
@@ -52,8 +58,9 @@ export class ListPageComponent {
     }
 
     public dodajNovi(nazivText:String,idText:any,opisText:String){
-      this.data.push({naziv:nazivText,id:idText,opis:opisText})
+      this.data.push({naziv:nazivText,id:parseInt(idText),opis:opisText})
       sessionStorage.setItem("state",JSON.stringify(this.data))
+      console.log(this.fruitList)
       this.store.dispatch({type:'INCREMENT'})
     }
     public getRowData =(naziv:any,id:any,opis:any)=>{

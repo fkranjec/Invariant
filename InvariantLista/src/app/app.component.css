@@ -1,36 +1,41 @@
-.navbar{
+.navbar {
     z-index: 999;
     display: flex;
     position: sticky;
     top: 0;
     background-color: #1c1c1c;
     place-content: center;
-    margin:0;
+    margin: 0;
     color: white;
     height: 5%;
 }
 
-.navbar>a{
+.navbar>a {
     margin: auto;
     font-weight: bolder;
     text-decoration: none;
     color: white;
-    padding:10px;
+    padding: 10px;
+    transition: 0.2s;
 }
-.navbar>a:hover{
+
+.navbar>a:hover {
     cursor: pointer;
     background-color: white;
     color: black;
     transform: skewX(-10deg);
 }
-.navbar>a>img{
-    padding-top:2% ;
+
+.navbar>a>img {
+    padding-top: 2%;
     margin: auto;
     width: 50%;
 }
-.navbar>a[class]:hover{
+
+.navbar>a[class]:hover {
     background-color: transparent;
 }
-#timeWeb{
+
+#timeWeb {
     margin-left: 20%;
 }

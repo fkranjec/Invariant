@@ -1,21 +1,23 @@
-.gumbovi{
+.gumbovi {
     display: flex;
     flex-direction: column;
     place-items: center;
     width: 100%;
     padding-top: 3%;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
-.inputForm{
+
+.inputForm {
     place-items: center;
     display: flex;
     flex-direction: row;
     padding-bottom: 3%;
-    
 }
-.inputForm>input{
+
+.inputForm>input {
     margin-left: 3%;
     border: none;
     outline: none;
+    height: 2.5em;
 }
-
