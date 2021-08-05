@@ -1,18 +1,18 @@
-
-.naslov{
+.naslov {
     display: flex;
     flex-direction: column;
     flex: 1;
     place-items: center;
     margin-top: 2%;
-    
 }
-.naslov>h1{
+
+.naslov>h1 {
     font-size: x-large;
     color: white;
-    font-weight:200;
+    font-weight: 200;
 }
-.naslov>hr{
+
+.naslov>hr {
     width: 5%;
     margin-top: -5%;
     background-color: #80808088;
@@ -20,19 +20,22 @@
     border: 1px solid #80808088;
     fill: #80808088;
 }
-.naslov>h2{
+
+.naslov>h2 {
     color: white;
     font-weight: 200;
     font-size: medium;
 }
-.prviDio:nth-child(odd){
+
+.prviDio:nth-child(odd) {
     margin-top: 2%;
     margin-left: 10%;
     display: flex;
     color: white;
     margin-right: 10%;
 }
-.prviDio:nth-child(even){
+
+.prviDio:nth-child(even) {
     margin-top: 2%;
     margin-left: 10%;
     display: flex;
@@ -40,42 +43,56 @@
     color: white;
     margin-right: 10%;
 }
-.krug{
+
+.krug {
+    position: absolute;
     align-items: center;
     background-color: white;
-    width: 60%;
-    height: auto;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
+    flex-wrap: wrap;
 }
-.prviDio:nth-child(odd)>.tekstPrviDio{
+
+.prviDio:nth-child(odd)>.tekstPrviDio {
     align-items: center;
-    margin-left: 3%;
+    margin-left: 350px;
 }
-.prviDio:nth-child(even)>.tekstPrviDio{
-    margin-right: 3%;
+
+.prviDio:nth-child(even)>.tekstPrviDio {
+    margin-right: 300px;
 }
-.prviDio:nth-child(odd)>.tekstPrviDio>h1{
+
+.prviDio:nth-child(even)>.tekstPrviDio>h1 {
+    margin-right: 50px;
+}
+
+.prviDio:nth-child(odd)>.tekstPrviDio>h1 {
     font-size: xx-large;
     font-weight: 200;
     margin-bottom: auto;
 }
-.prviDio:nth-child(even)>.tekstPrviDio>h1{
+
+.prviDio:nth-child(even)>.tekstPrviDio>h1 {
     font-size: xx-large;
     text-align: end;
     margin-bottom: auto;
 }
-.prviDio:nth-child(odd)>.tekstPrviDio>label{
+
+.prviDio:nth-child(odd)>.tekstPrviDio>label {
     font-weight: 200;
-    text-align:end;
+    text-align: end;
 }
-.gumb{
+
+.gumb {
     margin-top: 3%;
     display: flex;
     place-content: center;
     width: 100%;
     height: 100%;
 }
-.saznajVise{
+
+.saznajVise {
     background-color: transparent;
     color: white;
     align-items: center;
@@ -83,33 +100,40 @@
     height: 50px;
     border: 1px solid #808080;
     border-radius: 5px;
+    transition: 0.5s;
 }
-.saznajVise:hover{
+
+.saznajVise:hover {
     cursor: pointer;
     background-color: #80808088;
 }
-.prviDio[id]{
+
+.prviDio[id] {
     margin-top: 2%;
     margin-left: 10%;
     display: flex;
     color: #80808088;
     margin-right: 10%;
 }
-.drugiDio{
+
+.drugiDio {
     display: flex;
     flex-direction: row;
     place-content: center;
     margin-top: 5%;
 }
-.drugiDio>img{
+
+.drugiDio>img {
     width: 450px;
     margin: 1%;
     border-radius: 5px;
 }
-#prvi{
+
+#prvi {
     padding-bottom: 20%;
 }
-.treciDio{
+
+.treciDio {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 5%;
@@ -117,21 +141,23 @@
     place-content: center;
     color: white;
 }
-.treciDio>.karticaTreciDio{
+
+.treciDio>.karticaTreciDio {
     width: 30%;
     display: flex;
     flex-direction: column;
     place-items: center;
-    
 }
-.treciDio>.karticaTreciDio>h1{
+
+.treciDio>.karticaTreciDio>h1 {
     font-size: xx-large;
     margin-bottom: auto;
 }
-.treciDio>.karticaTreciDio>img{
+
+.treciDio>.karticaTreciDio>img {
     width: 50%;
 }
-.treciDio>.karticaTreciDio>label{
+
+.treciDio>.karticaTreciDio>label {
     color: #80808088;
 }
-
